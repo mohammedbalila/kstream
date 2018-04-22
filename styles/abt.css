@@ -1,0 +1,80 @@
+body {
+    background: mediumspringgreen;
+    transition: all .8s ease-out;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+.page-container {
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-gap: .5em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.page-container ul span {
+    display: inline-block;
+    background-color: darkgreen;
+    border-radius: .2em;
+    font-size: 16px;
+}
+.page-container .list {
+    position: relative;
+    animation-name: list;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes list {
+    0% {top: -100em;left: 1em}
+    50% {top: 10em;left: 1em}
+    100% {top: .5em;left: 1em}
+}
+.list {
+    text-align: left;
+    
+}
+.list h3 {
+    right: 150px;
+}
+.list ul {
+    left: -10em;
+    display: block;
+    width: 100%;
+}
+.list ul li {
+    width: 90%;
+
+}
+.contact {
+    color: #eee
+}
+.contact form {
+    opacity: .9;
+    margin: 5px 5px;
+    width: 100%;
+}
+.contact form input {
+    width: 80%;
+    padding: 8px 0;
+    margin: 8px 0;
+    border: 0;
+}
+input:hover, input:focus,textarea:hover, textarea:focus {
+    background-color: lightgray;
+}
+textarea {
+    resize: none;
+    width: 80%;
+    padding: 8px 0;
+    margin: 8px 0;
+    border: 0;
+}
+.send-btn {
+    color: #000;
+    background-color: firebrick
+}
+.send-btn:hover, .send-btn:focus {
+    background-color: springgreen;
+    color: wheat;
+}

@@ -1,0 +1,47 @@
+body {
+    background: mediumspringgreen;
+    transition: all .8s ease-out;
+}
+.page-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em
+}
+.form {
+    left: 30em
+}
+textarea {
+    width: 95%;
+    border: 1px solid #c9eff6;
+    border-radius: .1em;
+    resize: none
+}
+input[type="submit"] {
+    width: 50%;
+    display: block;
+    background-color: #0d47a1;
+    color: #111;
+    border: 0;
+    border-radius: .3em;
+    height: 2em;
+}
+.comment {
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    padding: 8px 0;
+}
+textarea:focus, textarea:hover {
+    border: 1px solid;
+    border: skyblue;  
+}
+.post-container {
+    background-color: powderblue;
+    margin-top: 1em;
+    padding: 1em;
+}
+.post-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 0px;
+}

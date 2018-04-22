@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    body {
+        background-image: url('flwr.jpg')
+    }
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+    }
+    input {
+        width: 75%;
+        padding: 8px 0;
+        margin: 8px 0;
+        border: none;
+        top: 5em;
+        /* position: relative; */
+    }
+    input[type="text"]:hover, input[type="text"]:focus,input[type="password"]:hover, input[type="password"]:focus {
+        background-color: lightgray;
+        opacity: .9;
+        color: black;
+        transition: all 2s ease-in-out
+    }
+    input[type="submit"] {
+        background-color: black;
+        color: whitesmoke;
+        display: block;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover, input[type="submit"]:focus {
+        background-color: whitesmoke;
+        color: black;
+        cursor: pointer;
+        transition: all 2s ease-in-out;
+        opacity: .9;
+    }
+    .wrapper h3 {
+        margin: 0;
+        padding: 0;
+    }
+    span {
+        color: white;
+        border-radius: 4px;
+        background-color: black;
+    }
+    </style>
+    <title>Komwledge Stream</title>
+</head>
+
+<body>
+    <div class="main">
+            <div class="wrapper">
+                    <center>
+                    <div class="form">
+                        <form action="/login" method="post">
+                            <h3>Wellcom to the Komwledge Stream </h3>
+                            <input type="text" name="user name" id="un" placeholder="User name">
+                            <input type="password" name="pswd" id="pswd" placeholder="Password">
+                            <input type="submit" value="Login">
+                        </form>
+                    </div>
+                    <p>Not a member? <span><a href="/register">Register</a></span></p>
+                </center>
+                </div>
+    </div>
+</body>
+</html>

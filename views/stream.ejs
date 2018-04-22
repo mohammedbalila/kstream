@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stream.css">
+    <title>Komwledge Stream </title>
+</head>
+
+<body>
+    <div class="main">
+        <% include header.ejs %>
+            <div class="page-content">
+                <div class="updates">
+                <h4 id="uData"> what's the updates? </h4>
+                <p id="updateSection"></p>
+            </div>
+                <div>
+                <div class="form">
+                    <form action="" method="post">
+                        <textarea name="post" id="" cols="30" rows="3" placeholder="what you're thinking about"></textarea>
+                        <input type="submit" value="Post">
+                    </form>
+                </div>
+                <div class="wrapper">
+                    <% posts.forEach(person => { %>
+                        <div class="post-container">
+                            <h3>
+                                <%= person.name%>
+                            </h3>
+                            <p>
+                                <%= person.Post%>
+                            </p>
+                            <hr>
+                            <form method="POST" action="/stream" class="form-comment">
+                                <textarea name="comment" cols="30" rows="1" class="comment"></textarea>
+                                <input type="submit" value="Comment" class="btn-comment">
+                            </form>
+                        </div>
+                        <% }); %>
+                </div>
+            </div>
+            <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius rem distinctio adipisci iusto similique. Minima sequi officiis sunt reiciendis, expedita amet accusamus, modi, quisquam tenetur distinctio nisi dolores molestiae laborum!
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>

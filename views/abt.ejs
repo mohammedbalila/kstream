@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="abt.css">
+    <title> About </title>
+</head>
+<body>
+    <div class="main">
+        <% include header.ejs %>
+        <div class="page-container">
+            <div class="updates">
+            <h4 id="uData"><span>what's </span><span>the </span><span> updates?</span></h4>
+            <p id="updateSection"></p>
+     </div>
+     <div class="page-content">
+         <div class="list">
+            <h3>Site Content</h3>
+        <ul>
+            <li>A web site helps people to learn how to code</li>
+            <li>Provide you with a good resources to learn from</li>
+            <li>Provide you with a number of books which you'll find <span><a href="/lib">here</a></span></li>
+            <li>Go a head and get started <span><a href="/">Konwledge Stream</a></span></li>
+        </ul>
+         </div>
+         <div class="contact">
+             <h4> Have any Q ? Go a head</h4>
+            <form action="" method="post">
+                <input type="email" name="mail" class="mail" placeholder="Your E-mail">
+                <textarea name="msg" class="msg" placeholder="Your messege" cols="30" rows="2"></textarea>
+                <input type="submit" value="Send" class="send-btn">
+            </form>
+         </div>
+     </div>
+    </div>
+    </div>
+</body>
+</html>

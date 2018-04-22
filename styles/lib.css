@@ -1,0 +1,90 @@
+body {
+    background: mediumspringgreen;
+}
+.page-container {
+    display: grid;
+    grid-template-columns: .7fr 2.5fr .7fr;
+    grid-gap: 1em
+}
+.page-container > div:nth-child(odd) {
+    background: rgb(155, 238, 206);  
+}
+.form {
+    margin: 0 1em;
+}
+.search {
+    border: 1px solid #c9fff6;
+    background-color: #3CBC8D;
+    color: black;
+    width: 90%;
+    padding: 5px 0;
+}
+.btn-send {
+    border: 1px solid #c9fff6;
+    background-color: crimson;
+    color: black;
+    width: 91%;
+    padding: 5px 0;
+}
+.btn-send:hover, .btn-send:focus {
+    background-color: darkred;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.search:hover ,.search:focus { 
+    background-color: mediumspringgreen;
+    border: 1px solid #c9fff6;
+    transition: all 1s ease-out;
+    color: black;   
+}
+.btn-search {
+    width: 83%;
+    padding: 5px 0px;
+    color: white;
+    background-color: springgreen;
+    border: none;
+    cursor:pointer;
+    margin: 0 1em;
+}
+.btn-search:hover ,.btn-search:focus {
+    background-color: rgb(16, 146, 155);
+    transition: all 1s ease-out;
+}
+.books {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .2em;
+}
+.item {
+    color: black;
+    opacity: 1;
+}
+.item:hover, .item:focus {
+    transition: all 1s ease-out;
+    border-radius: 1em;
+    border: rgb(5, 71, 46);
+    cursor:pointer
+}
+.item img:hover {
+    transition: all 1s ease-out;
+    opacity: .8;
+}
+.wellcom {
+    position: relative;
+    animation-name: wellcom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes wellcom {
+0% {left: -100em;}
+50% {left: 10em;}
+100% {left: .5em;}
+}
+.Categories-para a {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    background-color: mediumslateblue;
+    display: inline-block;
+    padding: 0 8px;
+}
