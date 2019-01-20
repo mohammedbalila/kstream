@@ -20,8 +20,6 @@ routs.get(item.url, (req, res) => {
 });
 });
 
-// log in 
-// let login = ()=> false;
 routs.get("/", (req, res) => {
      res.render('stream', { posts: posts, comments: Comments});
 });
